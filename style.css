@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100');
+body {
+	font-family: 'Open Sans', sans-serif;
+	background-image: url("5.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+	
+}
+nav{
+	position: relative;
+	margin: 27px auto 0;
+	width: 590px;
+	height: 50px;
+	background: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+	box-shadow: 0 2px 3px 0 rgba(0,0,0,.1);
+}
+nav a{
+	font-size: 15px;
+	text-transform: uppercase;
+	color: white;
+	text-decoration: none;
+	line-height: 50px;
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	text-align: center;
+}
+nav .animation{
+	position: absolute;
+	height: 100%;
+	/* height: 5px; */
+	top: 0;
+	/* bottom: 0; */
+	z-index: 0;
+	background: #1abc9c;
+	border-radius: 8px;
+	transition: all .5s ease 0s;
+}
+nav a:nth-child(1){
+	width: 100px;
+}
+nav .start-home, a:nth-child(1):hover~.animation{
+	width: 100px;
+	left: 0;
+}
+nav a:nth-child(2){
+	width: 110px;
+}
+nav a:nth-child(2):hover~.animation{
+	width: 110px;
+	left: 100px;
+}
+nav a:nth-child(3){
+	width: 100px;
+}
+nav a:nth-child(3):hover~.animation{
+	width: 100px;
+	left: 210px;
+}
+nav a:nth-child(4){
+	width: 160px;
+}
+nav a:nth-child(4):hover~.animation{
+	width: 160px;
+	left: 310px;
+}
+nav a:nth-child(5){
+	width: 120px;
+}
+nav a:nth-child(5):hover~.animation{
+	width: 120px;
+	left: 470px;
+}
+
+.padding-top {
+  padding-bottom: 10%;
+}
+
+.table-fill {
+  padding-top: 15px;
+  border-collapse: collapse;
+  margin: auto;
+  max-width: 65%;
+  width: 100%;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+ 
+th {
+  color:#00918a;
+  background:#1b1e24;
+  font-size:23px;
+  font-weight: 100;
+  padding:24px;
+  text-align:left;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  vertical-align:middle;
+}
+
+th:first-child {
+  border-top-left-radius:10px;
+}
+ 
+th:last-child {
+  border-top-right-radius:10px;
+  border-right:none;
+}
+  
+tr {
+  color:#758181;
+  font-size:16px;
+  font-weight:normal;
+  text-shadow: 0 1px 1px rgba(256, 256, 256, 0.1);
+}
+ 
+tr:hover td {
+  color:#c2c2c2;
+}
+ 
+tr:first-child {
+  border-top:none;
+}
+
+tr:last-child {
+  border-bottom:none;
+}
+ 
+tr:nth-child(odd) td {
+  background:#222222;
+}
+
+tr:last-child td:first-child {
+  border-bottom-left-radius:10px;
+}
+ 
+tr:last-child td:last-child {
+  border-bottom-right-radius:10px;
+}
+ 
+td {
+  background:#222222;
+  padding:20px;
+  text-align:left;
+  vertical-align:middle;
+  font-weight:300;
+  font-size:15px;
+  text-shadow: -1px -1px 1px rgba(0, 0, 0, 0.1);
+}
+
+td:last-child {
+  border-right: 0px;
+}
+
+th.text-left {
+  text-align: left;
+}
+
+th.text-center {
+  text-align: center;
+}
+
+th.text-right {
+  text-align: right;
+}
+
+td.text-left {
+  text-align: left;
+}
+
+td.text-center {
+  text-align: center;
+}
+
+td.text-right {
+  text-align: right;
+}
+
+.join-btn {
+	color: #00ae55;
+	text-decoration:none; 
+  }
+  
+  .join-btn-unavailable {
+	color:#ff0000;
+	text-decoration:none; 
+  }
+  .content{
+	  position: absolute;
+	  top: 50%;
+	  left: 50%;
+	  transform: translate(-50%, -50%);
+	  z-index: -1;
+	  text-align: center;
+	  width: 100%;
+	  font-family:MV Boli;
+	  color: #ffffff;
+	  text-shadow: 4px 4px red;
+	}
+	.content .title{
+	  font-size: 40px;
+	  font-weight: 700;
+	}
+	.content p{
+	  font-size: 35px;
+	  font-weight: 600;
+	}
+
+div.sm{
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin:  370px auto 0;
+}
+.sm a{
+	display: inline-block;
+	font-size: 40px;
+	width: 100px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	color: #00ccff;
+	margin: 0 16px;
+	transition: .4s linear;
+	position: relative;
+	
+  }
+  .sm a::before, .sm a::after{
+	content: '';
+	position: absolute;
+	box-sizing: border-box;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	transition: .4s linear;
+  }
+  
+  .sm a:hover{
+	transform: scale(.8);
+  }
+  
+  .sm a:hover::before{
+	border-left: 4px solid;
+	border-right: 4px solid;
+	transform: skewX(20deg);
+  }
+  
+  .sm a:hover::after{
+	border-top: 4px solid;
+	border-bottom: 4px solid;
+	transform: skewY(-20deg);
+  }
+	
